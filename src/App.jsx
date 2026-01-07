@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Header } from "./Components/Header/Header";
 import { Footer } from "./Components/Footer/Footer";
 import Banner from "./Carousel/Banner";
+import Featured from "./Components/Featured-Products/Featured";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <BrowserRouter>
             <Header />
             <Banner />
+            <Featured />
             <Footer />
         </BrowserRouter>
     );
