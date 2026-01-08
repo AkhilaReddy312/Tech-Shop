@@ -12,8 +12,11 @@ function App() {
     return (
         <BrowserRouter>
             <Header />
+
             <Banner />
+
             <Featured />
+
             <Footer />
         </BrowserRouter>
     );
