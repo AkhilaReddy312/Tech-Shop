@@ -6,6 +6,8 @@ import { Header } from "./Components/Header/Header";
 import { Footer } from "./Components/Footer/Footer";
 import Banner from "./Carousel/Banner";
 import Featured from "./Components/Featured-Products/Featured";
+import TopProducts from "./Components/Top-Products/TopProducts";
+import OurAdvantages from "./Components/OurAdvantages/OurAdvantages";
 
 
 function App() {
@@ -16,6 +18,10 @@ function App() {
             <Banner />
 
             <Featured />
+
+            <TopProducts />
+
+            <OurAdvantages />
 
             <Footer />
         </BrowserRouter>

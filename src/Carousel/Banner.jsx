@@ -28,10 +28,11 @@ const Banner = () => {
                             <h4>{product.title}</h4>
                             <h1>{product.tagline}</h1>
 
-                            <div className="price">
-                                <span className="final-price">₹{product.finalPrice}</span>
-                                <span className="original-price">₹{product.originalPrice}</span>
+                            <div className="priceban">
+                                <span className="finalprice">₹{product.finalPrice}</span>
+                                <span className="originalprice">₹{product.originalPrice}</span>
                             </div>
+
 
 
                             <button className="shop-btn">Shop Now</button>

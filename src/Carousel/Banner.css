@@ -62,7 +62,7 @@
 }
 
 /* Price wrapper */
-.price {
+.priceban {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -70,14 +70,15 @@
 }
 
 /* Final price (₹1,099) */
-.final-price {
+.finalprice {
     font-size: 20px;
     font-weight: 600;
     color: #d6deea;
+    text-decoration: none;
 }
 
 /* Original price (₹2,990) */
-.original-price {
+.originalprice {
     font-size: 14px;
     color: #7d8796;
     text-decoration: line-through;
