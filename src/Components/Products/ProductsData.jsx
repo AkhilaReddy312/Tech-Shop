@@ -224,10 +224,10 @@ const ProductsData = [
     {
         id: 11,
         images: [
-            "/images/products/sony1000xm4-1.png",
-            "/images/products/sony1000xm4-2.png",
-            "/images/products/sony1000xm4-3.png",
-            "/images/products/sony1000xm4-4.png"
+            "/images/products/sony1000Xm4-1.png",
+            "/images/products/sony1000Xm4-2.png",
+            "/images/products/sony1000Xm4-3.png",
+            "/images/products/sony1000Xm4-4.png"
         ],
         brand: "Sony",
         title: "Sony WF-1000XM4",
