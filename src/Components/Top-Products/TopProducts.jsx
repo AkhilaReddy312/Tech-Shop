@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ProductsData from "../Products/ProductsData";
 import "./TopProducts.css";
 
@@ -40,7 +41,11 @@ const TopProducts = () => {
             {/* PRODUCTS GRID */}
             <div className="top-grid">
                 {filteredProducts.slice(0, 11).map((item) => (
-                    <div className="top-card" key={item.id}>
+                    <Link
+                        to={`/products/${item.id}`}
+                        className="top-card"
+                        key={item.id}
+                    >
                         <img src={item.images[0]} alt={item.title} />
 
                         <div className="top-info">
@@ -49,15 +54,19 @@ const TopProducts = () => {
 
                             <div className="price">
                                 ₹{item.finalPrice.toLocaleString()}
-                                <span>₹{item.originalPrice.toLocaleString()}</span>
+                                <span>
+                                    ₹{item.originalPrice.toLocaleString()}
+                                </span>
                             </div>
 
-                            <button className="add-btn">Add to cart</button>
+                            <button className="add-btn">
+                                Add to cart
+                            </button>
                         </div>
-                    </div>
+                    </Link>
                 ))}
 
-                {/* BROWSE ALL CARD */}
+                {/* BROWSE ALL */}
                 <div className="top-card browse-all">
                     <h3>Browse All Products →</h3>
                 </div>

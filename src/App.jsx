@@ -1,30 +1,40 @@
-import { BrowserRouter } from "react-router-dom";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Routes, Route } from "react-router-dom";
 
 import { Header } from "./Components/Header/Header";
 import { Footer } from "./Components/Footer/Footer";
+
 import Banner from "./Carousel/Banner";
 import Featured from "./Components/Featured-Products/Featured";
 import TopProducts from "./Components/Top-Products/TopProducts";
 import OurAdvantages from "./Components/OurAdvantages/OurAdvantages";
 
+import ProductDetails from "./Pages/SingleProductpage/ProductDetails";
 
 function App() {
     return (
-        <BrowserRouter>
+        <>
             <Header />
 
-            <Banner />
+            <Routes>
+                {/* HOME PAGE */}
+                <Route
+                    path="/"
+                    element={
+                        <>
+                            <Banner />
+                            <Featured />
+                            <TopProducts />
+                            <OurAdvantages />
+                        </>
+                    }
+                />
 
-            <Featured />
-
-            <TopProducts />
-
-            <OurAdvantages />
+                {/* 🔥 SINGLE PRODUCT PAGE */}
+                <Route path="/products/:id" element={<ProductDetails />} />
+            </Routes>
 
             <Footer />
-        </BrowserRouter>
+        </>
     );
 }
 

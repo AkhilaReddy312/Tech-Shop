@@ -103,3 +103,8 @@
     color: #9aa4b2;
     cursor: pointer;
 }
+
+.top-card {
+    text-decoration: none;
+    color: inherit;
+}
