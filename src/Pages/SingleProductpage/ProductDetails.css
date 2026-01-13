@@ -1,89 +1,140 @@
 .product-details-page {
     background: #000;
     min-height: 100vh;
-    padding: 60px 80px;
+    padding: 60px 120px;
     color: #fff;
 }
 
+/* MAIN WRAPPER */
 .product-container {
     display: flex;
-    gap: 80px;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    width: 100%;
 }
 
-/* LEFT */
+/* LEFT SIDE */
 .product-images {
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    flex: 1.3;
 }
 
+/* THUMBNAILS */
 .image-thumbs {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
 }
 
 .image-thumbs img {
-    width: 80px;
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
     border: 1px solid #333;
+    padding: 6px;
     cursor: pointer;
-    padding: 5px;
+    background: #111;
 }
 
 .image-thumbs img.active {
     border: 2px solid red;
 }
 
+/* MAIN IMAGE */
 .main-image img {
-    width: 500px;
+    width: 650px;
+    max-width: 100%;
+    object-fit: contain;
 }
 
-/* RIGHT */
+/* RIGHT SIDE */
+.product-info {
+    flex: 1;
+}
+
 .product-info h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 .sub-title {
     color: #aaa;
+    margin-bottom: 10px;
 }
 
+/* RATING */
 .rating {
     color: red;
-    margin: 10px 0;
+    margin-bottom: 20px;
+    font-size: 14px;
 }
 
+.rating span {
+    color: #aaa;
+}
+
+/* PRICE */
 .price-box {
     display: flex;
-    gap: 15px;
     align-items: center;
-    margin: 15px 0;
+    gap: 18px;
+    margin: 20px 0;
 }
 
 .final-price {
-    font-size: 32px;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .original-price {
-    text-decoration: line-through;
+    font-size: 18px;
     color: #888;
+    text-decoration: line-through;
 }
 
+.stock {
+    background: green;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+/* SAVE TEXT */
 .save {
     color: #00ff00;
     margin-bottom: 20px;
 }
 
+/* OFFERS */
+.offers {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.offers span {
+    border: 1px solid #333;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #ccc;
+    background: #111;
+}
+
+/* ADD TO CART */
 .add-cart-btn {
     background: red;
     color: white;
     border: none;
-    padding: 14px 30px;
+    padding: 14px 40px;
     font-size: 16px;
     cursor: pointer;
     margin-bottom: 30px;
 }
 
+/* SPECS */
 .specs p {
     margin: 6px 0;
     color: #ccc;
