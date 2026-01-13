@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Header } from "../Components/Header/Header";
 import { Footer } from "../Components/Footer/Footer";
-import { AppRouter } from "../Router/AppRouter";
+import { AppRouter } from "../Router-Dom/AppRouter";
 import Login from "../Components/Authentication/Login";
 import Signup from "../Components/Authentication/Signup";
 

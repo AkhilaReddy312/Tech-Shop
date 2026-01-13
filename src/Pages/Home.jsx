@@ -1,15 +1,14 @@
-
 import Banner from "../Components/Carousel/Banner";
-import FeaturedProducts from "../Components/FeaturedProducts/FeaturedProduct";
+import Featured from "../Components/Featured-Products/Featured";
 import { Services } from "../Components/Services/Services";
-import TopProducts from "../Components/TopProducts/TopProducts";
+import TopProducts from "../Components/Top-Products/TopProducts";
 
 export const Home = () => {
 
     return (
         <>
             <Banner />
-            <FeaturedProducts />
+            <Featured />
             <TopProducts />
             <Services />
         </>

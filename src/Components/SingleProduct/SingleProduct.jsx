@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import productsData from "../Products/productsData";
+import productsData from "../Products/ProductsData";
 import "./SingleProduct.css";
 import reviewsData from "./reviewsData";
 
 import { useDispatch } from "react-redux";
 import { addToCart } from "../Cart/CartSlice";
 
-import RelatedProducts from "../RelatedProducts/RelatedProduct";
+import RelatedProducts from "../RelatedProducts/RelatedProducts";
+
 
 
 

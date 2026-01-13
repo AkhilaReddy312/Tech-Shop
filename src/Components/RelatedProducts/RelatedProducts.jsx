@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import { useNavigate } from "react-router-dom";
 import productsData from "../Products/ProductsData";
-import "./RelatedProduct.css";
+import "./RelatedProducts.css";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -32,15 +32,18 @@ const RelatedProducts = ({ category, currentId }) => {
 
             <Slider {...settings}>
                 {relatedProducts.map((item) => (
-                    <div key={item.id} className="rp-card-wrapper" onClick={() => navigate(`/product/${item.id}`)} >
-                        <div
-                            className="rp-card" >
+                    <div
+                        key={item.id}
+                        className="rp-card-wrapper"
+                        onClick={() => navigate(`/products/${item.id}`)}
+                    >
+                        <div className="rp-card">
                             <img src={item.images[0]} alt={item.title} />
 
-                            <h4 >{item.title}</h4>
+                            <h4>{item.title}</h4>
 
                             <div className="rp-rating">
-                                {"★".repeat(item.rateCount)}
+                                {"★".repeat(item.rateCount || 4)}
                             </div>
 
                             <p className="rp-price">
