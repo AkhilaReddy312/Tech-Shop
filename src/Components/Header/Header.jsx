@@ -1,7 +1,7 @@
 import "./Header.css";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import productsData from "../Products/productsData";
+import productsData from "../Products/ProductsData";
 import { dropdownMenu } from "./headerData";
 
 import { useSelector } from "react-redux";

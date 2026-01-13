@@ -1,4 +1,4 @@
-const ProductsData = [
+const productsData = [
     {
         id: 1,
         tag: "hero-product",
@@ -224,10 +224,10 @@ const ProductsData = [
     {
         id: 11,
         images: [
-            "/images/products/sony1000Xm4-1.png",
-            "/images/products/sony1000Xm4-2.png",
-            "/images/products/sony1000Xm4-3.png",
-            "/images/products/sony1000Xm4-4.png"
+            "/images/products/sony1000xm4-1.png",
+            "/images/products/sony1000xm4-2.png",
+            "/images/products/sony1000xm4-3.png",
+            "/images/products/sony1000xm4-4.png"
         ],
         brand: "Sony",
         title: "Sony WF-1000XM4",
@@ -310,10 +310,10 @@ const ProductsData = [
     {
         id: 15,
         images: [
-            "/images/products/sonych710n-1.png",
-            "/images/products/sonych710n-2.png",
-            "/images/products/sonych710n-3.png",
-            "/images/products/sonych710n-4.png",
+            "/images/products/sonyCh710n-1.png",
+            "/images/products/sonyCh710n-2.png",
+            "/images/products/sonyCh710n-3.png",
+            "/images/products/sonyCh710n-4.png",
         ],
         brand: "Sony",
         title: "Sony WH-CH710N",
@@ -394,10 +394,10 @@ const ProductsData = [
     {
         id: 19,
         images: [
-            "/images/products/sonyxb400-1.png",
-            "/images/products/sonyxb400-2.png",
-            "/images/products/sonyxb400-3.png",
-            "/images/products/sonyxb400-4.png",
+            "/images/products/sonyXb400-1.png",
+            "/images/products/sonyXb400-2.png",
+            "/images/products/sonyXb400-3.png",
+            "/images/products/sonyXb400-4.png",
         ],
         brand: "Sony",
         title: "Sony WI-XB400",
@@ -414,4 +414,4 @@ const ProductsData = [
     },
 ];
 
-export default ProductsData;
+export default productsData;
