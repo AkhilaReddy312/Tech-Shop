@@ -1,6 +1,6 @@
 import Slider from "react-slick";
 import { useNavigate } from "react-router-dom";
-import productsData from "../Products/productsData";
+import productsData from "../Products/ProductsData";
 import "./RelatedProduct.css";
 
 import "slick-carousel/slick/slick.css";
