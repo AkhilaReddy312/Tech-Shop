@@ -1,6 +1,6 @@
 import Slider from "react-slick";
 import "./Banner.css";
-import ProductsData from "../Components/Products/ProductsData";
+import ProductsData from "../Products/ProductsData";
 const Banner = () => {
     const heroProducts = ProductsData.filter(
         (product) => product.tag === "hero-product"
